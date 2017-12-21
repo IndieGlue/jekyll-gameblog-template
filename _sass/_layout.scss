@@ -14,14 +14,14 @@
         margin-left: auto;
 
         a{
-            color: $text-color;
+            color: $background-color;
             font-size: 12px;
             display: inline-block;
             padding: 1.6em 2em 1.3em;
             border-bottom: 0.3em solid transparent;
 
             &.active{
-                border-bottom: 0.3em solid $brand-color;
+                border-bottom: 0.3em solid $brand-color;               
             }
         }
     }
@@ -38,9 +38,38 @@
 
 .hero{
     background-image: url(../assets/hero.png);
-    background-size: cover;
+    background-size-y: 100%;
     background-repeat: no-repeat;
     background-position-y: -5.8em; 
+    background-position-x: center;
     width: 100%;
-    min-height: 30em;
+    height: 30em;
+}
+
+.hero-overlay{
+    width: 100%;        
+    background-color: rgba(0,0,0,0);
+
+    .hero-text{
+        padding-top: 2em;
+        background-color: $pink-color;
+
+        h1{
+            text-align: center;
+            color: $background-color;
+            font-size: 48px;
+        }
+
+        span.by-line{
+            display:block;               
+            text-align: center;
+            color: $background-color;
+            font-size: 18px;
+            padding-bottom: 2em;
+        }
+    }
+}
+
+.body{
+    padding: 3em
 }
