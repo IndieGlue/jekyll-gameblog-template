@@ -34,16 +34,59 @@
             margin-top: 1em;
         }
     }
+
+    .social{
+        padding: 1.2em;
+       
+        .fit{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+    
+        .twitter, .facebook, .youtube{
+            cursor: pointer;
+            svg{
+                height: 1.5em;
+                fill: $background-color;
+                margin: 0 1em;
+            }
+        }
+
+        .twitter:hover{
+            svg{
+               
+                    transition: 0.2s all ease-in-out;
+                    fill: #1da1f2;
+               
+            }
+        }
+
+        .facebook:hover{
+            svg{               
+                transition: 0.2s all ease-in-out;
+                fill: #3b5998;                
+            }
+        }
+
+        .youtube:hover{
+            svg{                
+                transition: 0.2s all ease-in-out;
+                fill: #ff0000;               
+            }
+        }
+    }
 }
 
 .hero{
     background-image: url(../assets/hero.png);
-    background-size-y: 100%;
+    background-image-size-y: 120%;
     background-repeat: no-repeat;
     background-position-y: -5.8em; 
     background-position-x: center;
     width: 100%;
-    height: 30em;
+    height: 29.6em;
 }
 
 .hero-overlay{
@@ -66,6 +109,59 @@
             color: $background-color;
             font-size: 18px;
             padding-bottom: 2em;
+        }
+    }
+}
+
+.home{
+    .social{
+        padding: 1em;
+        background-color: $brand-color;
+    
+        .social-text{
+            color: $background-color;
+            display: block;
+            font-size: 32px;
+            margin-right: 1em;
+        }
+
+        .fit{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+    
+        .twitter, .facebook, .youtube{
+            cursor: pointer;
+            svg{
+                height: 4em;
+                fill: $background-color;
+                margin: 0 1em;
+            }
+        }
+
+        .twitter:hover{
+            svg{
+               
+                    transition: 0.2s all ease-in-out;
+                    fill: #1da1f2;
+               
+            }
+        }
+
+        .facebook:hover{
+            svg{               
+                transition: 0.2s all ease-in-out;
+                fill: #3b5998;                
+            }
+        }
+
+        .youtube:hover{
+            svg{                
+                transition: 0.2s all ease-in-out;
+                fill: #ff0000;               
+            }
         }
     }
 }
