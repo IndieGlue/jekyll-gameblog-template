@@ -44,3 +44,12 @@
     right: 0;
     text-align: right;
 }
+
+/**
+ *  Animation helpers
+ */
+
+ @-webkit-keyframes leftarrow {
+    0% { -webkit-transform: translateX(0); opacity: 1 }
+    100% { -webkit-transform: translateX(-0.4em); opacity: 0.4 }
+  }

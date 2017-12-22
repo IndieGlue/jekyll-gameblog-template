@@ -80,13 +80,12 @@
 }
 
 .hero{
-    background-image: url(../assets/hero.png);
-    background-image-size-y: 120%;
-    background-repeat: no-repeat;
-    background-position-y: -5.8em; 
-    background-position-x: center;
+    background: url(../assets/hero.png) no-repeat center center fixed; 
+    background-position-y: -11.8em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;   
     width: 100%;
-    height: 29.6em;
+    height: 39.5em;
 }
 
 .hero-overlay{
@@ -94,22 +93,53 @@
     background-color: rgba(0,0,0,0);
 
     .hero-text{
-        padding-top: 2em;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 3em 0.5em 4em;
+        float: right;     
         background-color: $pink-color;
+        transform: skew(15deg) translateZ(0);
+        margin-right: -6em;  
+        transition: 0.1s all ease-in-out;  
+        border-left: 0 solid $background-color;     
+        cursor: pointer;  
 
-        h1{
-            text-align: center;
-            color: $background-color;
-            font-size: 48px;
+        &:hover{
+            margin-right: -2em;  
+            transition: 0.1s all ease-in-out;  
+            border-left: 1em solid $background-color;          
         }
 
-        span.by-line{
-            display:block;               
-            text-align: center;
-            color: $background-color;
-            font-size: 18px;
-            padding-bottom: 2em;
+        .text{
+            margin-right: 2em;
+            .hc-logo{
+                transform: skew(-15deg) translateZ(0);
+                margin: auto;
+                width: 10em;
+                display: block;
+            }
+    
+            span.by-line{
+                transform: skew(-15deg) translateZ(0);
+                display:block;               
+                text-align: center;
+                color: $background-color;
+                font-size: 14px;
+                padding-bottom: 1em;            
+            }
         }
+     
+        
+        .more{
+            -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
+            svg{
+                width: 3em;
+                transform: skew(-15deg) translateZ(0);
+                fill: $background-color;
+                
+            }
+        }
+        
     }
 }
 

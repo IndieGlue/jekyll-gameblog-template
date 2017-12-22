@@ -1,7 +1,7 @@
 ---
 layout: page
-title: dev blog
-permalink: /dev blog/
+title: dev log
+permalink: /dev log/
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
