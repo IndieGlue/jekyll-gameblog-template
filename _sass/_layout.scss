@@ -14,7 +14,7 @@
         margin-left: auto;
 
         a{
-            color: $background-color;
+            color: $text-color;
             font-size: 12px;
             display: inline-block;
             padding: 1.6em 2em 1.3em;
@@ -47,9 +47,11 @@
     
         .twitter, .facebook, .youtube{
             cursor: pointer;
+            transition: 0.1s all ease-in-out;
+            fill: $text-color;
             svg{
                 height: 1.5em;
-                fill: $background-color;
+                fill: $text-color;
                 margin: 0 1em;
             }
         }
@@ -57,7 +59,7 @@
         .twitter:hover{
             svg{
                
-                    transition: 0.2s all ease-in-out;
+                    transition: 0.1s all ease-in-out;
                     fill: #1da1f2;
                
             }
@@ -65,14 +67,14 @@
 
         .facebook:hover{
             svg{               
-                transition: 0.2s all ease-in-out;
+                transition: 0.1s all ease-in-out;
                 fill: #3b5998;                
             }
         }
 
         .youtube:hover{
             svg{                
-                transition: 0.2s all ease-in-out;
+                transition: 0.1s all ease-in-out;
                 fill: #ff0000;               
             }
         }
@@ -101,13 +103,13 @@
         transform: skew(15deg) translateZ(0);
         margin-right: -6em;  
         transition: 0.1s all ease-in-out;  
-        border-left: 0 solid $background-color;     
+        border-left: 0 solid $text-color;     
         cursor: pointer;  
 
         &:hover{
             margin-right: -2em;  
             transition: 0.1s all ease-in-out;  
-            border-left: 1em solid $background-color;          
+            border-left: 1em solid $text-color;          
         }
 
         .text{
@@ -123,7 +125,7 @@
                 transform: skew(-15deg) translateZ(0);
                 display:block;               
                 text-align: center;
-                color: $background-color;
+                color: $text-color;
                 font-size: 14px;
                 padding-bottom: 1em;            
             }
@@ -135,7 +137,7 @@
             svg{
                 width: 3em;
                 transform: skew(-15deg) translateZ(0);
-                fill: $background-color;
+                fill: $text-color;
                 
             }
         }
@@ -144,54 +146,35 @@
 }
 
 .home{
-    .social{
+    .beta-signup{
+        color: $text-color;
+        font-size: 48px;
+        text-align: center;
+        display: block;
         padding: 1em;
-        background-color: $brand-color;
-    
-        .social-text{
-            color: $background-color;
-            display: block;
-            font-size: 32px;
-            margin-right: 1em;
+    }
+
+    .subscribe{
+        text-align: center;
+        font-size: 0;
+        
+        .email{
+            font-size: 24px;
+            width: 50%;
+            border: 2px solid $text-color;
+            padding: 0.5em 1em;
+            outline: 0;
         }
 
-        .fit{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-    
-    
-        .twitter, .facebook, .youtube{
+        .subscribe{
+            font-size: 24px;
+            border: none;
+            padding: 0.5em 2em;
+            border: 2px solid $pink-color;
+            background-color: $pink-color;
+            color: $text-color;           
+            text-transform: uppercase;
             cursor: pointer;
-            svg{
-                height: 4em;
-                fill: $background-color;
-                margin: 0 1em;
-            }
-        }
-
-        .twitter:hover{
-            svg{
-               
-                    transition: 0.2s all ease-in-out;
-                    fill: #1da1f2;
-               
-            }
-        }
-
-        .facebook:hover{
-            svg{               
-                transition: 0.2s all ease-in-out;
-                fill: #3b5998;                
-            }
-        }
-
-        .youtube:hover{
-            svg{                
-                transition: 0.2s all ease-in-out;
-                fill: #ff0000;               
-            }
         }
     }
 }
