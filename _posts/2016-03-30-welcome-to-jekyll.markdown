@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-color:  teal
-width:   6 
-height:  1
-date:   2016-03-30 11:31:49 +0200
+title:  "Concept art"
+date:   2018-01-15
+image: "../assets/posts/concept-art.jpg"
 categories: jekyll update
+desc: A sketch of the house where the 4 cats live. This will become one of the levels.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
