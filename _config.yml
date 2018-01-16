@@ -10,7 +10,7 @@ title: Indie Glue
 email: indiegluedev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Website and dev blog for Indie Glue game development
-baseurl: "/jekyll-gameblog-template" # the subpath of your site, e.g. /blog
+baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "http://indieglue.com" # the base hostname & protocol for your site
 twitter_username: indieglue
 github_username:  nikrich
