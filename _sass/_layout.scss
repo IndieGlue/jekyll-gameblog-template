@@ -89,6 +89,35 @@
         margin-left: 1.2em;
     }
 
+    .post.wrapper{
+        padding: 2em 1em;   
+        background-color: #111;     
+
+        .post-title{
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .post{
+            margin-bottom: 3em;
+
+            .line{
+                margin: 0.3em 0 1em;
+            }
+
+            .pst-title{
+                width: 100%;
+                display: block;
+                font-size: 22px;
+            }
+
+            .post-meta{
+                font-style: italic;
+                font-size: 14px;
+            }
+        }
+    }
+
     .site-footer{
         position: fixed;
         bottom: 0;
