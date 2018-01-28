@@ -8,6 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 
 *{
     box-sizing: border-box;
@@ -28,6 +33,10 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     overflow-x: hidden;
+}
+
+*{
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
 }
 
 /**
