@@ -1,490 +1,153 @@
-.post-content{
-    a{
-        color: $pink-color !important;
-    }
-}
 
-@media only screen and (min-width: 500px) {
-    .site-header{
-        background-color: $black-color;    
-        -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-    
-        .wrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-        }
-    
-        .site-nav-web{
-            margin-left: auto;
-    
-            a{
-                color: $text-color;
-                font-size: 12px;
-                display: inline-block;
-                padding: 1.6em 2em 1.3em;
-                border-bottom: 0.3em solid transparent;
-    
-                &.active{
-                    border-bottom: 0.3em solid $brand-color;               
-                }
-            }
-        }
-    
-        .title{      
-        
-            img{
-                max-width: 300px;
-                margin-bottom: -4em;
-                margin-top: 1em;
-            }
-        }
-    
-        .social{
-            padding: 1.2em;
-           
-            .fit{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-        
-        
-            .twitter, .facebook, .youtube{
-                cursor: pointer;
-                transition: 0.1s all ease-in-out;
-                fill: $text-color;
-                svg{
-                    height: 1.5em;
-                    fill: $text-color;
-                    margin: 0 1em;
-                }
-            }
-    
-            .twitter:hover{
-                svg{
-                   
-                        transition: 0.1s all ease-in-out;
-                        fill: #1da1f2;
-                   
-                }
-            }
-    
-            .facebook:hover{
-                svg{               
-                    transition: 0.1s all ease-in-out;
-                    fill: #3b5998;                
-                }
-            }
-    
-            .youtube:hover{
-                svg{                
-                    transition: 0.1s all ease-in-out;
-                    fill: #ff0000;               
-                }
-            }
-        }
+@media (max-width: 576px) { 
+    * {
+        font-size: 16px;
     }
-    
-    .hero{
-        img{
-            width: 100%;
-            float:left;
-            margin-top: -6.15em;
-        }
+
+    .navbar{
+        justify-content: center;
     }
-    
-    .hero-overlay{
-        width: 100%;        
-        background-color: rgba(0,0,0,0);
-    
-        .hero-text{
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5em 3em 0.5em 4em;
-            float: right;     
-            background-color: $pink-color;
-            transform: skew(15deg) translateZ(0);
-            margin-right: -6em;  
-            transition: 0.1s all ease-in-out;  
-            border-left: 0 solid $text-color;     
-            cursor: pointer;  
-            margin-top: -3em;
-    
-            &:hover{
-                margin-right: -2em;  
-                transition: 0.1s all ease-in-out;  
-                border-left: 1em solid $text-color;          
-            }
-    
-            .text{
-                margin-right: 2em;
-                .hc-logo{
-                    transform: skew(-15deg) translateZ(0);
-                    margin: auto;
-                    width: 10em;
-                    display: block;
-                }
-        
-                span.by-line{
-                    transform: skew(-15deg) translateZ(0);
-                    display:block;               
-                    text-align: center;
-                    color: $text-color;
-                    font-size: 14px;
-                    padding-bottom: 1em;            
-                }
-            }
-         
-            
-            .more{
-                -webkit-animation: leftarrow 0.6s infinite alternate ease-in-out;
-                svg{
-                    width: 3em;
-                    transform: skew(-15deg) translateZ(0);
-                    fill: $text-color;
-                    
-                }
-            }
-            
-        }
-    }
-    
-    .home{
-        .beta-signup{
-            color: $text-color;
-            font-size: 32px;
-            text-align: left;
-            display: block;
-            padding: 1em 1em 0;
-        }
-    
-        .subscribe{
-            text-align: center;
-            font-size: 0;
-            
-            .email{
-                font-size: 18px;
-                width: 50%;
-                border: 2px solid $text-color;
-                padding: 0.5em 1em;
-                outline: 0;
-            }
-    
-            .subscribe{
-                font-size: 18px;
-                border: none;
-                padding: 0.5em 2em;
-                border: 2px solid $pink-color;
-                background-color: $pink-color;
-                color: $text-color;           
-                text-transform: uppercase;
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .body{
-        padding: 3em
-    }
-    
-    .page-content{
-        margin-top: 3em;
-    }
-    
-    .home-container{
-        width: 960px;
-        margin: auto;
-    
-        .about{
-            width: 45%;
-            float: left;
-            margin: 2.5em 2em;
-            font-size: 22px;
-        }
-    
-        .newsletter{
-            width: 45%;
-            float: left;
-        }
-    }
-    
-    .site-footer{
-        clear: both;
-        background-color: $pink-color;
+
+    #navbarSupportedContent {
         position: fixed;
-        width: 100%;
-        bottom: 0;
-    
-        .text{
-            float: right;
-            padding: 1em;
-        }
-    
-        .social{
-            padding: 1.2em;
-            float: right;   
-           
-            .fit{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
+        height: 100vh;
+        width: 100vw;
+        margin: 0;       
+        right: -100vw;
+        top: 0;
+        display: block;
+        background-color: $grey-color;
+        transition: 0.3s all ease-in-out;
+        z-index: 99999;
         
-        
-            .twitter, .facebook, .youtube{
-                float: left;
-                cursor: pointer;
-                transition: 0.1s all ease-in-out;
-                fill: $text-color;
-                svg{
-                    height: 1.5em;
-                    fill: $text-color;
-                    margin: 0 1em;
-                }
-            }
-    
-            .twitter:hover{
-                svg{
-                   
-                        transition: 0.1s all ease-in-out;
-                        fill: #bbb;
-                   
-                }
-            }
-    
-            .facebook:hover{
-                svg{               
-                    transition: 0.1s all ease-in-out;
-                    fill: #bbb;         
-                }
-            }
-    
-            .youtube:hover{
-                svg{                
-                    transition: 0.1s all ease-in-out;
-                    fill: #bbb;             
-                }
-            }
+        a{
+            color: $black-color;
         }
-    }
-    
-    .post-content{
-    
-        .post-list{
-            margin-top: 1em;
-    
-            .post{
-                width: 31%;
-                float: left;
-                margin: 0 1em 1em 0;  
-                border-radius: 2px;  
-                background-color: #fff;     
-                
+
+        .nav{
+            margin: 6em 0 4em;
+            flex-direction: column;
+
+            .nav-item{
+                width: 100vw;
+                padding: 0.5em;
+
                 a{
-                    display: block;
-                    transition: all 0.3s ease-in-out;
-    
+                    font-size: 16px;
+
                     &:hover{
-                        transition: all 0.3s ease-in-out;
-                        -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
-                        box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
-                        opacity: 0.95;
-                    }
-                }            
-    
-                .text{
-                    background-color: #000;
-                    padding: 1em;
-    
-                    .post-meta{
-                        float:right;
+                        color: $pink-color;
                     }
                 }
-    
-                .desc{
-                    background-color: #fff;
-                    color: #000;
-                    padding: 1em;
-                }
             }
         }
-    
-        
-    }
-    
-    /*
-     *  Post
-     */
-    .post-header{
-        float: left;
-        width: 100%;
-        margin-bottom: 0.5em;
-    
-        .post-title{
-            float: left;        
-        }
-       
-        .post-meta{
-            float: right;
-        }
-    }
-    
-    .post-content{
-        p{
-            margin: 0.5em 0;
-        }
-    }
-}
 
-@media only screen and (max-width: 500px) {
-    .site-header{      
-        background-color: $black-color;    
-        -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-    
-        .wrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: nowrap;
+        &.show{
+            right: -10VW;  
+            transition: 0.3s all ease-in-out;
         }
-    
-        .site-nav-web{
-            display: none;
+
+        &.collapsing{
+            right: -10VW;  
+            transition: 0.3s all ease-in-out;
         }
-    
-        .title{   
-            img{               
-                margin-bottom: -4em;
-                margin-top: 1em;
+
+        .navbar-toggler{
+            svg{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                right: 2em;
+                top: 0.5em;
+                fill: $pink-color;                
             }
         }
-    
-        .social{
-            padding: 1.2em;
-           
-            .fit{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-        
-        
-            .twitter, .facebook, .youtube{
-                cursor: pointer;
-                transition: 0.1s all ease-in-out;
-                fill: $text-color;
-                svg{
-                    height: 1.5em;
-                    fill: $text-color;
-                    margin: 0 1em;
-                }
-            }
-    
-            .twitter:hover{
-                svg{                   
-                    transition: 0.1s all ease-in-out;
-                    fill: #1da1f2;                
-                }
-            }
-    
-            .facebook:hover{
-                svg{               
-                    transition: 0.1s all ease-in-out;
-                    fill: #3b5998;                
-                }
-            }
-    
-            .youtube:hover{
-                svg{                
-                    transition: 0.1s all ease-in-out;
-                    fill: #ff0000;               
-                }
+
+        .social {
+            svg {
+                fill: $pink-color;
             }
         }
     }
 
-    .hero-text{
-        display: none;
+    .subscribe{
+        margin-bottom: 2em;
     }
 
-    .newsletter{
-        display: none; 
-        .beta-signup{
-            padding: 1em;
-            font-size: 22px;
-        }
+    .beta-signup {
+        text-transform: uppercase;
+        display: block;
+        font-size: 22px;
+        margin: 1em 1em 0.5em 1em;   
     }
 
-    .hero{        
-        width: 100%;
-    }
-    
-    .about{
-        width: 100%;
-        padding: 1em;
+    .line{
+        display: block;
+        width: 3em;
+        height: 3px;
+        background-color: $pink-color;
+        margin-left: 1.2em;
     }
 
     .site-footer{
-        clear: both;
-        background-color: $pink-color;
         position: fixed;
-        width: 100%;
         bottom: 0;
-    
-        .text{
-            float: right;
-            padding: 1em;
+        left: 0;
+        right: 0;
+        background-color: $pink-color;
+        padding: 1em 2em 1em 1em;
+    }
+}
+
+.navbar-brand{
+    width:80%;
+    margin-bottom: -2em;
+    z-index: 9999;
+}
+
+.nav-link {
+    white-space: nowrap;
+}
+
+.navbar-toggler{
+    border: none;
+    padding: 0;
+
+    .navbar-toggler-icon{
+        pointer-events: none;
+    }
+}
+
+.social{  
+    min-width: 8em;    
+    .twitter, .facebook, .youtube{
+        cursor: pointer;
+        transition: 0.1s all ease-in-out;
+        fill: $text-color;
+        svg{
+            height: 1.5em;
+            fill: $text-color;            
         }
-    
-        .social{
-            padding: 1.2em;
-            float: right;   
-           
-            .fit{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-        
-        
-            .twitter, .facebook, .youtube{
-                float: left;
-                cursor: pointer;
-                transition: 0.1s all ease-in-out;
-                fill: $text-color;
-                svg{
-                    height: 1.5em;
-                    fill: $text-color;
-                    margin: 0 1em;
-                }
-            }
-    
-            .twitter:hover{
-                svg{
-                   
-                        transition: 0.1s all ease-in-out;
-                        fill: #bbb;
-                   
-                }
-            }
-    
-            .facebook:hover{
-                svg{               
-                    transition: 0.1s all ease-in-out;
-                    fill: #bbb;         
-                }
-            }
-    
-            .youtube:hover{
-                svg{                
-                    transition: 0.1s all ease-in-out;
-                    fill: #bbb;             
-                }
-            }
+    }
+
+    .twitter:hover{
+        svg{           
+            transition: 0.1s all ease-in-out;
+            fill: #1da1f2;           
+        }
+    }
+
+    .facebook:hover{
+        svg{               
+            transition: 0.1s all ease-in-out;
+            fill: #3b5998;                
+        }
+    }
+
+    .youtube:hover{
+        svg{                
+            transition: 0.1s all ease-in-out;
+            fill: #ff0000;               
         }
     }
 }
