@@ -6,7 +6,7 @@ permalink: /dev blog/
 
 <div class="post-list row">
 {% for post in site.posts %}
-    <div class="post col-sm-12">        
+    <div class="post col-12 col-md-6 col-sm-12">        
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
             <div class="crop">
                 <img src="{{post.image}}">   

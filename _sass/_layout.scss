@@ -74,34 +74,8 @@
         }
     }
 
-    .post.wrapper{
-        padding: 2em 1em;   
+    .post.wrapper {
         background-color: #111;     
-
-        .post-title{
-            font-size: 24px;
-            margin-bottom: 1em;
-            text-transform: uppercase;
-        }
-
-        .post{
-            margin-bottom: 3em;
-
-            .line{
-                margin: 0.3em 0 1em;
-            }
-
-            .pst-title{
-                width: 100%;
-                display: block;
-                font-size: 22px;
-            }
-
-            .post-meta{
-                font-style: italic;
-                font-size: 14px;
-            }
-        }
     }
 
     .hero{
@@ -130,6 +104,10 @@
 
     .show-case{
         margin-bottom: 4.5em;
+
+        .header, .line{
+            margin: 0;
+        }
     }
 }
 
@@ -259,7 +237,7 @@
     display: block;
     width: 100%;
     font-size: 22px;
-    margin: 1em 1em 0.5em 1em;   
+    margin: 1em 1em 0 0.5em;   
 }
 
 .hero{
@@ -275,7 +253,36 @@
     width: 3em;
     height: 3px;
     background-color: $pink-color;
-    margin-left: 1.2em;
+    margin-left: 0.8em;
+}
+
+.post.wrapper{
+    padding: 2em 1em;  
+
+    .post-title{
+        font-size: 24px;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+
+    .post{
+        margin-bottom: 3em;
+
+        .line{
+            margin: 0.3em 0 1em;
+        }
+
+        .pst-title{
+            width: 100%;
+            display: block;
+            font-size: 22px;
+        }
+
+        .post-meta{
+            font-style: italic;
+            font-size: 14px;
+        }
+    }
 }
 
 .site-footer{
