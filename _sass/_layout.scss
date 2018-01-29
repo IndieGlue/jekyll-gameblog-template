@@ -265,8 +265,8 @@
 .hero{
     position: relative;
 
-    .hero-text{
-        display: none;
+    >img{
+        width: 100%;
     }
 }
 
