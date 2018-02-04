@@ -76,6 +76,10 @@
 
     .post.wrapper {
         background-color: #111;     
+
+        p{
+            padding: 0.5em 0;
+        }
     }
 
     .hero{
@@ -95,9 +99,8 @@
         min-height: 14em;
         overflow: hidden;
         
-        img{
-            height: 16em;
-            width: auto;
+        img{          
+            width: 100%;
             max-width: none;    
         }
     }
@@ -162,10 +165,11 @@
 
     .crop {
         min-height: 14em;
+        max-height: 18em;
         overflow: hidden;
         
         img{
-            height: 20em;
+            height: auto;
             width: auto;
             max-width: none;    
         }
