@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Final push"
+date:   2018-02-04
+image: "../assets/posts/snacks.jpg"
+categories: jekyll update
+desc: This is what 60 commits looks like in 15 hours
+---
+
+![Us 3 developing]({{ "../../../../../assets/posts/snacks.jpg" }})
+
+This is what 60 commits looks like in 15 hours. Burning the midnight oil, getting ready for our up coming demo in Cape Town and subsequent alpha launch. 
