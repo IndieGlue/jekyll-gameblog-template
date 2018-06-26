@@ -103,7 +103,7 @@
     }
 
     .crop {
-        min-height: 14em;
+        min-height: 22em;
         overflow: hidden;
         
         img{          
@@ -171,7 +171,7 @@
     }
 
     .crop {
-        min-height: 14em;
+        min-height: 26em;
         max-height: 18em;
         overflow: hidden;
         
@@ -355,6 +355,16 @@
             font-size: 14px;
         }
     }
+}
+
+.hero-image{
+    background-image: url('../assets/hero.png');
+    background-size: cover;
+}
+
+.cats-on-grass{
+    background-image: url('../assets/screenshot.png');
+    background-size: cover;
 }
 
 .site-footer{
