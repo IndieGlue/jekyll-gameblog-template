@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Some gameplay footage"
+date:   2018-06-26
+image: "../assets/posts/gameplay.gif"
+categories: jekyll update
+desc: A quick demo of how it looks in-game
+---
+
+
+![Some gameplay footage]({{ "../../../../../assets/posts/gameplay.gif" }})
+
+Here is a quick look at what the game looks like. It's a multplayer couch party about a bunch of high cats chasing tuna!
