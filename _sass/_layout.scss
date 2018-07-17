@@ -138,6 +138,15 @@
  */
 
 @media (min-width: 577px) { 
+
+    .steam{
+        text-align: center;
+        margin-top: -20em;  
+        
+        iframe{
+            max-width: 660px;
+        }
+    }
   
     .hero {
         .hero-text-desktop{
@@ -152,7 +161,7 @@
 
     .subscribe-text{      
         text-align: center;     
-        margin-top: -20em;      
+        margin-top: -30em;      
         a{
             
             padding: 1em;
