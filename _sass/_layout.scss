@@ -422,3 +422,103 @@
         height: 100%;
     }
 }
+
+.press{
+    .container.hd{
+        background: transparent;
+        position: absolute;
+        width:100%;
+        z-index: 9999;        
+
+        a{
+            font-size: 24px;
+            color: #fff;
+
+            &:hover{
+                color: $pink-color;
+            }
+        }
+
+        .col-1{
+            padding: 1em;
+        }
+    }
+
+    .banner{
+        height: 700px;
+        background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url('../../assets/hc-small.png');
+     
+        background-size: cover;
+        background-position-y: -120px;
+
+        .hero{
+            padding-top: 450px;
+            
+            .title{
+                font-family: $base-font-family;
+                font-size: 48px;
+                color: #fff;
+            }
+
+            .meta{
+                font-size: 24px;
+            }
+
+            p{
+                font-size: 18px;
+                padding-top: 1em;
+                max-width: 600px;
+            }
+        }
+    }
+
+    .body{
+        border-top: 1px solid #333;
+    }
+
+    .about{
+        padding-top: 2em;
+
+        .about-title{
+            font-size: 32px;
+            padding-bottom: 1em;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 1em;
+        }
+
+        p{
+            font-size: 16px;
+            margin-bottom: 1em;
+        }
+    }
+   
+    .download{
+
+        font-size: 18px;
+        margin: 2em auto;
+        background-color: $pink-color;
+        padding: 1em 2em;
+        display: inline-block;
+
+        &:hover{
+            text-decoration: none;
+        }
+
+    }
+    
+
+    .my-gallery{
+        figure{
+            display: inline-block;
+            width: 553px;
+            padding: 1em 0.5em 1em 0.5em;
+        }
+    }
+
+    .videoWrapper{
+       margin: 1em 0.5em 3em 0.5em;
+    }
+}
+

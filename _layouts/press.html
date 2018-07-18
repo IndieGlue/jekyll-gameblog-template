@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="high cats, indie glue, high, cats, game, indiedev, sa, cape town">
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{site.baseurl}}/assets/favicon.ico" type="image/x-icon"/>
+
+     <!-- Core CSS file -->
+    <link rel="stylesheet" href="../../ext/ps/photoswipe.css">  
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+        In the folder of skin CSS file there are also:
+        - .png and .svg icons sprite, 
+        - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="../../ext/ps/default-skin/default-skin.css"> 
+
+    <!-- Core JS file -->
+    <script src="../../ext/ps/photoswipe.min.js"></script> 
+
+    <!-- UI JS file -->
+    <script src="../../ext/ps/photoswipe-ui-default.min.js"></script> 
+  </head>
+
+  <body class="press">
+
+    {% include header.html %}    
+
+    <div class="content">
+      <div>        
+        {{ content }}
+      </div>
+    </div>
+
+    
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112736448-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112736448-1');
+  </script>
+
+  </body>
+
+</html>
