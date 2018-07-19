@@ -9,10 +9,13 @@ permalink: /press/highcats/
 <div class="banner">
     <div class="container hero">
         <span class="title">High Cats</span> <br />
-        <span class="meta">Indie Glue | 27th July | PC</span>
+        <span class="meta">Indie Glue | Launching 27th July | PC</span>
         <p>            
             Join the high cats on an epic mission to get as high as possible by eating catnip and then trying to catch a can of tuna to fill their insatiable appetite.            
         </p>
+        <i>            
+              19/07/2018
+        </i>
     </div>
 </div>
 <div class="body">
@@ -24,6 +27,31 @@ permalink: /press/highcats/
         <p>
             Getting high will give your cat boost, so there is no time to blink when your cat has the catnip, eat quickly by completing a random generated sequence of buttons to get high and pass the catnip to the next player, if you are too slow the other cats will start getting snappy. Meow at each other while running full speed through twenty-seven unique levels in the beautiful and sunny Feline Forest, the dark streets of Cat City, and the ominous houses of the Siberian Suburbs. Each new area has a new feature to overcome. Strategize with your friends to be able to catch the can of tuna on each level. Each cat has their own unique personality and together they share only nine lives.
         </p>
+        <ul class="features">
+            <li>
+                <b>Fast-paced platformer</b> - Keep up with the other cats and the can of tuna and don’t leave the screen or you will die.
+            </li>
+            <li>
+                <b>Fast-paced game mechanics</b> - Press buttons in the correct order as quickly as possible while running and jumping after a can of tuna.
+            </li>
+            <li>
+                <b>Single player gameplay</b> - Make snap decisions to conquer each area on your own.
+            </li>
+            <li>
+                <b>Co-op gameplay</b> - Strategize with your friends. Plan how and who will catch the can of tuna for each level.
+            </li>
+            <li>
+               <b>Replayable levels</b> - Memorize each level to avoid falling into sneaky traps.
+            </li>
+            <li>
+                <b>Cats eating catnip</b> - Everyone loves seeing cats get high.
+            </li>
+            <li>
+                <b>Unique characters</b> - Artemis fears neglectance, Ninja is a loner, Zoe want to take over the cat world and Kiesha loves all the attention.
+            </li>
+        </ul>
+
+       <iframe src="https://store.steampowered.com/widget/897940/" frameborder="0" width="100%" height="190"></iframe>
     </div>
     <div class="container">
 
